@@ -11,7 +11,8 @@ pipeline {
       parallel {
         stage('error') {
           steps {
-            sh 'pwd'
+            sh '''pwd
+exit 1'''
           }
         }
 
